@@ -23,7 +23,7 @@
       <div>
     </header>
 
-    <fieldset class="island-1-2">
+    <fieldset class="island-1-2 personal">
       <legend class="giga push">Personal details</legend>
       <form method="post" action="https://formspree.io/mart1003@algonquinlive.com">
 
@@ -46,7 +46,7 @@
 
         <div class="push">
           <label class="push-1-8" for="shirt">T-shirt size</label>
-          <select class="push-1-8" id="shirt" name="shirt">
+          <select id="shirt" name="shirt">
             <option>Select a t-shirt size</option>
             <option>Fitted: XS</option>
             <option>Fitted: S</option>
@@ -63,135 +63,153 @@
 
         <div class="push">
           <label class="push-1-8" for="email">Email</label>
-          <input class="push-1-8" id="email" name="email">
+          <input id="email" name="email">
         </div>
 
         <div class="push">
           <label class="push-1-8" for="phone">Phone number<span class="italic"> (optional)</span></label>
-          <input class="push-1-8" id="phone" name="phone">
+          <input class="" id="phone" name="phone">
         </div>
       </form>
     </fieldset>
 
-    <fieldset>
-      <legend>Address</legend>
+    <div class="push-2 gutter-1-2 pad-t-1-4">
+      <hr>
+    </div>
+
+    <fieldset class="island-1-2 address">
+      <legend class="giga push">Address</legend>
       <form method="post" action="https://formspree.io/mart1003@algonquinlive.com">
 
         <div>
-          <label for="address">Street address</label>
-          <input id="address" name="address">
+          <label class="push-1-8" for="address">Street address</label>
+          <input class="push" id="address" name="address">
         </div>
 
         <div>
-          <label for="city">City</label>
-          <input id="city" name="city">
+          <label class="push-1-8 pad-t-1-2" for="city">City</label>
+          <input class="push" id="city" name="city">
         </div>
 
         <div>
-          <label for="province">Province</label>
-          <input id="province" list="province-list" placeholder="Select a province">
-          <datalist id="province-list">
-            <option value="Alberta">
-            <option value="British Columbia">
-            <option value="Manitoba">
-            <option value="New Brunswick">
-            <option value="Newfoundland & Labrador">
-            <option value="Northwest Territories">
-            <option value="Nova Scotia">
-            <option value="Nunavut">
-            <option value="Ontario">
-            <option value="Prince Edward Island">
-            <option value="Québec">
-            <option value="Saskatchewan">
-            <option value="Yukon">
+          <label class="push-1-8 pad-t-1-2" for="province">Province</label>
+          <select class="push" id="province" name="province-list">
+            <option value="Select a province">
+            <option>Alberta>
+            <option>British Columbia>
+            <option>Manitoba>
+            <option>New Brunswick>
+            <option>Newfoundland & Labrador>
+            <option>Northwest Territories>
+            <option>Nova Scotia>
+            <option>Nunavut>
+            <option>Ontario>
+            <option>Prince Edward Island>
+            <option>Québec>
+            <option>Saskatchewan>
+            <option>Yukon>
           </select>
         </div>
+
+        <div>
+          <label class="push-1-8 pad-t-1-2" for="postal">Postal code</label>
+          <input class="push" id="postal" name="postal">
+        </div>
+
       </form>
     </fieldset>
 
-    <fieldset>
-      <legend>What activities are you interested in helping with?</legend>
+    <div class="push-2 gutter-1-2 pad-t-1-4">
+      <hr>
+    </div>
+
+    <fieldset class="island-1-2" >
+      <legend class="giga">What activities are you interested in helping with?</legend>
       <div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="digging" type="checkbox" name="jobs">
           <label for="digging">Digging holes</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="dirty" type="checkbox" name="jobs">
           <label for="dirty">Getting dirty</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="lifting" type="checkbox" name="jobs">
           <label for="lifting">Lifting heavy objects</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="driving" type="checkbox" name="jobs">
           <label for="driving">Driving people</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="transport" type="checkbox" name="jobs">
           <label for="transport">Transporting trees</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="photos" type="checkbox" name="jobs">
           <label for="photos">Taking photos</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="publishing" type="checkbox" name="jobs">
           <label for="publishing">Online publishing</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8 push">
           <input id="managing" type="checkbox" name="jobs">
           <label for="managing">Managing people</label>
         </div>
       </div>
     </fieldset>
 
-    <fieldset>
-      <legend>Do you have experience with the following?</legend>
+    <fieldset class="island-1-2">
+      <legend class="giga">Do you have experience with the following?</legend>
       <div>
-        <div>
+        <div class="pad-b-1-8">
           <input id="shovel" type="checkbox" name="experience">
           <label for="shovel">Shovels</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="GPS" type="checkbox" name="experience">
           <label for="GPS">Hand-held GPS</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="writing" type="checkbox" name="experience">
           <label for="writing">Writing & blogging</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="photography" type="checkbox" name="experience">
           <label for="photography">Photography</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="climbing" type="checkbox" name="experience">
           <label for="climbing">Trail & hill climbing</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="bush" type="checkbox" name="experience">
           <label for="bush">Bush craft</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="atv" type="checkbox" name="experience">
           <label for="atv">ATVs</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="identify" type="checkbox" name="experience">
           <label for="identify">Plant identification</label>
         </div>
-        <div>
+        <div class="pad-t-1-8 pad-b-1-8">
           <input id="planning" type="checkbox" name="experience">
           <label for="planning">Special event planning</label>
         </div>
-        <div>
-          <input id="ispeaking" type="checkbox" name="experience">
+        <div class="pad-t-1-8 pad-b-1">
+          <input id="speaking" type="checkbox" name="experience">
           <label for="speaking">Speaking to groups</label>
         </div>
       </div>
     </fieldset>
+
+    <div class="push-2 gutter-1-2 pad-t-1-4">
+      <hr>
+    </div>
 
     <fieldset>
       <legend>Do you have a valid driver's license?</legend>
