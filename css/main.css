@@ -3,7 +3,7 @@ html {
 }
 
 header {
-  color: white;
+  color: #fff;
   background-color: #70ad55;
 }
 
@@ -35,6 +35,17 @@ hr {
 
 footer {
   background-color: #70ad55;
-  color: white;
+  color: #fff;
   margin: 0;
+}
+
+button {
+  background-color: #6e8c62;
+  border-color: #6e8c62;
+}
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before,
+input, textarea, select {
+  border-color: #6e8c62;
 }
