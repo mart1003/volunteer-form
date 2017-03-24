@@ -51,3 +51,12 @@ textarea,
 select {
   border-color: #6e8c62;
 }
+
+@media only screen and (min-width: 35em) {
+
+  .space-grid, div:nth-child(odd) {
+    padding-right: 1.5em;
+
+  }
+
+}
