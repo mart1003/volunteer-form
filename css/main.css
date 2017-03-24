@@ -22,7 +22,7 @@ input {
 
 hr {
   border-color: #70ad55;
-  opacity: 0.4;
+  opacity: .4;
 }
 
 .personal {
@@ -46,6 +46,8 @@ button {
 
 input[type="checkbox"] + label::before,
 input[type="radio"] + label::before,
-input, textarea, select {
+input,
+textarea,
+select {
   border-color: #6e8c62;
 }

@@ -13,7 +13,7 @@ deliverables: '1 HTML file, 4 CSS files, images'
 - Choose the appropriate form input types for the content.
 - Style the form so it works well responsively.
 - **The form does not need to submit to Formspree.**
-- Text can be found inside the `content.txt` file.
+- Text can be found inside the `content.txt`a file.
 - *Run it through Markbot and make sure it passes all the checks.*
 
 ---

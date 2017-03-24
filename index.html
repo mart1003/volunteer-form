@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="handheldfriendly" content="true">
   <meta name="mobileoptimized" content="240">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700" rel="stylesheet">
 </head>
@@ -20,7 +20,7 @@
       <div class="island-1-2">
         <h1 class="peta push-1-2 pad-t-1-2">Apply to be a tree planter</h1>
         <p class="mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
-      <div>
+      </div>
     </header>
 
     <fieldset class="island-1-2 personal">
@@ -94,20 +94,20 @@
         <div>
           <label class="push-1-8 pad-t-1-2" for="province">Province</label>
           <select class="push" id="province" name="province-list">
-            <option value="Select a province">
-            <option>Alberta>
-            <option>British Columbia>
-            <option>Manitoba>
-            <option>New Brunswick>
-            <option>Newfoundland & Labrador>
-            <option>Northwest Territories>
-            <option>Nova Scotia>
-            <option>Nunavut>
-            <option>Ontario>
-            <option>Prince Edward Island>
-            <option>Québec>
-            <option>Saskatchewan>
-            <option>Yukon>
+            <option value="">Select a province</option>
+            <option>Alberta</option>
+            <option>British Columbia</option>
+            <option>Manitoba</option>
+            <option>New Brunswick</option>
+            <option>Newfoundland & Labrador</option>
+            <option>Northwest Territories></option>
+            <option>Nova Scotia</option>
+            <option>Nunavut</option>
+            <option>Ontario</option>
+            <option>Prince Edward Island</option>
+            <option>Québec</option>
+            <option>Saskatchewan</option>
+            <option>Yukon</option>
           </select>
         </div>
 
@@ -162,15 +162,15 @@
     </fieldset>
 
     <fieldset class="island-1-2">
-      <legend class="giga">Do you have experience with the following?</legend>
+      <legend class="giga">Do you have any experience with the following?</legend>
       <div>
         <div class="pad-b-1-8">
           <input id="shovel" type="checkbox" name="experience">
           <label for="shovel">Shovels</label>
         </div>
         <div class="pad-t-1-8 pad-b-1-8">
-          <input id="GPS" type="checkbox" name="experience">
-          <label for="GPS">Hand-held GPS</label>
+          <input id="gps" type="checkbox" name="experience">
+          <label for="gps">Hand-held GPS</label>
         </div>
         <div class="pad-t-1-8 pad-b-1-8">
           <input id="writing" type="checkbox" name="experience">
@@ -215,7 +215,7 @@
       <legend class="giga gutter-1-2">Do you have a valid driver's license?</legend>
       <div>
         <input type="radio" id="license-yes" name="license">
-        <label class="gutter-1-2"for="license-yes">Yes</label>
+        <label class="gutter-1-2" for="license-yes">Yes</label>
         <input type="radio" id="license-no" name="license">
         <label class="gutter" for="license-no">No</label>
       </div>
@@ -245,11 +245,9 @@
       <hr>
     </div>
 
-    <fieldset class="">
-      <div class="gutter-1-2">
-        <legend class="giga pad-b-1-2">Please let is know any comments or questions you may have.</legend>
-        <textarea id="comment" name="comment" rows="7"></textarea>
-      </div>
+    <fieldset class="gutter-1-2">
+      <legend class="giga pad-b-1-2">Please let us know any comments or questions you may have.</legend>
+      <textarea id="comment" name="comment" rows="7"></textarea>
     </fieldset>
 
     <div class="push-2 gutter-1-2 pad-t">
