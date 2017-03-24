@@ -10,38 +10,43 @@
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700" rel="stylesheet">
 </head>
 <body>
 
-  <section>
-    <h1>Apply to be a tree planter</h1>
-    <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  <div>
 
-    <fieldset>
-      <legend>Personal details</legend>
+    <header class="push-2">
+      <div class="island-1-2">
+        <h1 class="peta push-1-2 pad-t-1-2">Apply to be a tree planter</h1>
+        <p class="mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+      <div>
+    </header>
+
+    <fieldset class="island-1-2">
+      <legend class="giga push">Personal details</legend>
       <form method="post" action="https://formspree.io/mart1003@algonquinlive.com">
 
         <div>
-          <label for="name">Full name</label>
-          <input id="name" name="name">
-          <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+          <label class="push-1-8" for="name">Full name</label>
+          <input class="push-1-8" id="name" name="name">
+          <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
         </div>
 
         <div>
-          <label for="nickname">What should we call you?</label>
-          <input id="nickname" name="nickname">
-          <p>What all your friends call you, e.g. “Liz”.</p>
+          <label class="push-1-8" for="nickname">What should we call you?</label>
+          <input class="push-1-8" id="nickname" name="nickname">
+          <p class="italic micro">What all your friends call you, e.g. “Liz”.</p>
         </div>
 
-        <div>
-          <label for="date">Date of birth</label>
-          <input id="date" name="date" placeholder="yyyy-mm-dd">
+        <div class="push">
+          <label class="push-1-8" for="date">Date of birth</label>
+          <input class="push-1-8" id="date" name="date" placeholder="yyyy-mm-dd">
         </div>
 
-        <div>
-          <label for="shirt">T-shirt size</label>
-          <select id="shirt" name="shirt">
+        <div class="push">
+          <label class="push-1-8" for="shirt">T-shirt size</label>
+          <select class="push-1-8" id="shirt" name="shirt">
             <option>Select a t-shirt size</option>
             <option>Fitted: XS</option>
             <option>Fitted: S</option>
@@ -56,14 +61,14 @@
           </select>
         </div>
 
-        <div>
-          <label for="email">Email</label>
-          <input id="email" name="email">
+        <div class="push">
+          <label class="push-1-8" for="email">Email</label>
+          <input class="push-1-8" id="email" name="email">
         </div>
 
-        <div>
-          <label for="phone">Phone number<span> (optional)</span></label>
-          <input id="phone" name="phone">
+        <div class="push">
+          <label class="push-1-8" for="phone">Phone number<span class="italic"> (optional)</span></label>
+          <input class="push-1-8" id="phone" name="phone">
         </div>
       </form>
     </fieldset>
@@ -83,22 +88,22 @@
         </div>
 
         <div>
-          <label for="province">Privince</label>
-          <select id="province" name="shirt">
-            <option>Select a province</option>
-            <option>Alberta</option>
-            <option>British Columbia</option>
-            <option>Manitoba</option>
-            <option>New Brunswick</option>
-            <option>Newfoundland & Labrador</option>
-            <option>Northwest Territories</option>
-            <option>Nova Scotia</option>
-            <option>Nunavut</option>
-            <option>Ontario</option>
-            <option>Prince Edward Island</option>
-            <option>Québec</option>
-            <option>Saskatchewan</option>
-            <option>Yukon</option>
+          <label for="province">Province</label>
+          <input id="province" list="province-list" placeholder="Select a province">
+          <datalist id="province-list">
+            <option value="Alberta">
+            <option value="British Columbia">
+            <option value="Manitoba">
+            <option value="New Brunswick">
+            <option value="Newfoundland & Labrador">
+            <option value="Northwest Territories">
+            <option value="Nova Scotia">
+            <option value="Nunavut">
+            <option value="Ontario">
+            <option value="Prince Edward Island">
+            <option value="Québec">
+            <option value="Saskatchewan">
+            <option value="Yukon">
           </select>
         </div>
       </form>
@@ -106,88 +111,86 @@
 
     <fieldset>
       <legend>What activities are you interested in helping with?</legend>
+      <div>
         <div>
-          <div>
-            <input id="digging" type="checkbox" name="jobs">
-            <label for="digging">Digging holes</label>
-          </div>
-          <div>
-            <input id="dirty" type="checkbox" name="jobs">
-            <label for="dirty">Getting dirty</label>
-          </div>
-          <div>
-            <input id="lifting" type="checkbox" name="jobs">
-            <label for="lifting">Lifting heavy objects</label>
-          </div>
-          <div>
-            <input id="driving" type="checkbox" name="jobs">
-            <label for="driving">Driving people</label>
-          </div>
-          <div>
-            <input id="transport" type="checkbox" name="jobs">
-            <label for="transport">Transporting trees</label>
-          </div>
-          <div>
-            <input id="photos" type="checkbox" name="jobs">
-            <label for="photos">Taking photos</label>
-          </div>
-          <div>
-            <input id="publishing" type="checkbox" name="jobs">
-            <label for="publishing">Online publishing</label>
-          </div>
-          <div>
-            <input id="managing" type="checkbox" name="jobs">
-            <label for="managing">Managing people</label>
-          </div>
+          <input id="digging" type="checkbox" name="jobs">
+          <label for="digging">Digging holes</label>
         </div>
-      </form>
+        <div>
+          <input id="dirty" type="checkbox" name="jobs">
+          <label for="dirty">Getting dirty</label>
+        </div>
+        <div>
+          <input id="lifting" type="checkbox" name="jobs">
+          <label for="lifting">Lifting heavy objects</label>
+        </div>
+        <div>
+          <input id="driving" type="checkbox" name="jobs">
+          <label for="driving">Driving people</label>
+        </div>
+        <div>
+          <input id="transport" type="checkbox" name="jobs">
+          <label for="transport">Transporting trees</label>
+        </div>
+        <div>
+          <input id="photos" type="checkbox" name="jobs">
+          <label for="photos">Taking photos</label>
+        </div>
+        <div>
+          <input id="publishing" type="checkbox" name="jobs">
+          <label for="publishing">Online publishing</label>
+        </div>
+        <div>
+          <input id="managing" type="checkbox" name="jobs">
+          <label for="managing">Managing people</label>
+        </div>
+      </div>
     </fieldset>
 
     <fieldset>
       <legend>Do you have experience with the following?</legend>
+      <div>
         <div>
-          <div>
-            <input id="shovel" type="checkbox" name="experience">
-            <label for="shovel">Shovels</label>
-          </div>
-          <div>
-            <input id="GPS" type="checkbox" name="experience">
-            <label for="GPS">Hand-held GPS</label>
-          </div>
-          <div>
-            <input id="writing" type="checkbox" name="experience">
-            <label for="writing">Writing & blogging</label>
-          </div>
-          <div>
-            <input id="photography" type="checkbox" name="experience">
-            <label for="photography">Photography</label>
-          </div>
-          <div>
-            <input id="climbing" type="checkbox" name="experience">
-            <label for="climbing">Trail & hill climbing</label>
-          </div>
-          <div>
-            <input id="bush" type="checkbox" name="experience">
-            <label for="bush">Bush craft</label>
-          </div>
-          <div>
-            <input id="atv" type="checkbox" name="experience">
-            <label for="atv">ATVs</label>
-          </div>
-          <div>
-            <input id="identify" type="checkbox" name="experience">
-            <label for="identify">Plant identification</label>
-          </div>
-          <div>
-            <input id="planning" type="checkbox" name="experience">
-            <label for="planning">Special event planning</label>
-          </div>
-          <div>
-            <input id="ispeaking" type="checkbox" name="experience">
-            <label for="speaking">Speaking to groups</label>
-          </div>
+          <input id="shovel" type="checkbox" name="experience">
+          <label for="shovel">Shovels</label>
         </div>
-      </form>
+        <div>
+          <input id="GPS" type="checkbox" name="experience">
+          <label for="GPS">Hand-held GPS</label>
+        </div>
+        <div>
+          <input id="writing" type="checkbox" name="experience">
+          <label for="writing">Writing & blogging</label>
+        </div>
+        <div>
+          <input id="photography" type="checkbox" name="experience">
+          <label for="photography">Photography</label>
+        </div>
+        <div>
+          <input id="climbing" type="checkbox" name="experience">
+          <label for="climbing">Trail & hill climbing</label>
+        </div>
+        <div>
+          <input id="bush" type="checkbox" name="experience">
+          <label for="bush">Bush craft</label>
+        </div>
+        <div>
+          <input id="atv" type="checkbox" name="experience">
+          <label for="atv">ATVs</label>
+        </div>
+        <div>
+          <input id="identify" type="checkbox" name="experience">
+          <label for="identify">Plant identification</label>
+        </div>
+        <div>
+          <input id="planning" type="checkbox" name="experience">
+          <label for="planning">Special event planning</label>
+        </div>
+        <div>
+          <input id="ispeaking" type="checkbox" name="experience">
+          <label for="speaking">Speaking to groups</label>
+        </div>
+      </div>
     </fieldset>
 
     <fieldset>
@@ -236,7 +239,7 @@
       <p>© Tree Hugger International Organization</p>
     </footer>
 
-  </section>
+  </div>
 
 </body>
 </html>
